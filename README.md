@@ -21,16 +21,20 @@ Follow these instructions to set up and run the project on your local machine.
 2. Navigate to the project directory:
      ```bash
      cd django-multi-app-project
+     
 4. Create a virtual environment (optional but recommended):
      ```bash
      python -m venv venv
+     
 6. Activate the virtual environment:
     On Windows (Command Prompt):
      ```bash
      .\venv\Scripts\activate
+     
    On macOS/Linux:
      ```bash
      source venv/bin/activate
+     
 7. Install dependencies:
      ```bash
      pip install -r requirements.txt
