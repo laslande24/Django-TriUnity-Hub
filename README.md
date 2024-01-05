@@ -19,24 +19,32 @@ Follow these instructions to set up and run the project on your local machine.
    git clone https://github.com/laslande24/Django-TriUnity-Hub.git
 
 2. Navigate to the project directory:
-     ```cd django-multi-app-project
+     ```bash
+     cd django-multi-app-project
 4. Create a virtual environment (optional but recommended):
-     ```python -m venv venv
+     ```bash
+     python -m venv venv
 6. Activate the virtual environment:
     On Windows (Command Prompt):
-     ```.\venv\Scripts\activate
+     ```bash
+     .\venv\Scripts\activate
    On macOS/Linux:
-     ```source venv/bin/activate
+     ```bash
+     source venv/bin/activate
 7. Install dependencies:
-     ```pip install -r requirements.txt
+     ```bash
+     pip install -r requirements.txt
    
 ### Database Setup
 
 1. Apply database migrations:
-     ```python manage.py migrate
+     ```bash
+     python manage.py migrate
    
 2. Create a superuser (admin) account:
-    ```python manage.py createsuperuser
+    ```bash
+    python manage.py createsuperuser
 
 3. Running the Development Server
-    ```python manage.py runserver
+    ```bash
+    python manage.py runserver
