@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="padding: 0; font-family: Arial, Helvetica, sans-serif;">
+    <div style="background-color: grey; padding: 2px 5px; margin-bottom: 10px">
+        <h1>Weather Detector</h1>
+    </div>
+    <form action="" style="display: flex; flex-direction: column; gap: 5px; height: max-content;" method="POST">
+        {% csrf_token %}
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <input name="search" id="search" placeholder="Search" type="text" />
+            <button type="submit">Search</button>
+        </div>
+        {% if data.country_code %}
+        <h2>{{ city }}</h2>
+        <p>Country Code: {{ data.country_code }}</p>
+        <p>Coordinate: {{ data.coordinate }}</p>
+        <p>Temperature: {{ data.temp }}</p>
+        <p>Pressure: {{ data.pressure }}</p>
+        <p>Humidity: {{ data.humidity }}</p>
+        {% endif %}
+    </form>
+</body>
+
+</html>

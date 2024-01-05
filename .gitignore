@@ -1,0 +1,36 @@
+# .gitignore
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore the virtual environment directory
+venv/
+
+# Ignore the Django migration files
+*.db
+*.sqlite3
+*.log
+/migrations/
+
+# Ignore local settings file
+local_settings.py
+
+# Ignore development and production settings
+*.env
+
+# Ignore any other temporary or development files
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pyc
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat group</title>
+</head>
+
+<body style="display: flex; justify-content: center;">
+    <div style="height: 100%; width: 50%; display: flex; flex-direction: column; gap: 5px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <div style="display: flex; align-items: center; justify-content: center; background-color: burlywood;">
+            <h1>Django Chat</h1>
+        </div>
+        <form action="check_view" method="POST" style="display: flex; flex-direction: column; gap: 5px; background-color: khaki; padding: 10px;">
+            {% csrf_token %}
+            <label for="room_name">Room name</label>
+            <input name="room_name" id="room_name" style="padding: 10px 5px;" />
+            <label for="username">Username</label>
+            <input name="username" id="username" style="padding: 10px 5px;" />
+            <input type="submit" value="Submit" style="padding: 10px 5px; margin-top: 10px;"/>
+        </form>
+    </div>
+</body>
+
+</html>
