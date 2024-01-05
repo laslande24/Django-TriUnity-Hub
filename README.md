@@ -1,4 +1,4 @@
-# Django Multi-App Project
+ # Django Multi-App Project
 
 Welcome to the Django Multi-App Project! This project includes three apps: a blog app, a weather app, and a chat room app.
 
@@ -32,7 +32,6 @@ Follow these instructions to set up and run the project on your local machine.
      .\venv\Scripts\activate
      
    On macOS/Linux:
-     ```bash
      source venv/bin/activate
      
 7. Install dependencies:
